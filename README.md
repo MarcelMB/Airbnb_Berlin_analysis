@@ -35,12 +35,14 @@ The analysis code is based on several jupyter notebooks.
 * Notebook: *kmean_clustering_2.ipynb* uses also boolean data, which is not an optimal solution for the Kmeans algortihm, however gives a better result in this case
 * especially cluster 1 has profesional listings: entire homes, hosts other listings, many reviews per month (high activity)
 * especially cluster 2 has more less profesional listings: private rooms, shared bathroom
-
 * columns that have outliers like the price are for instance log transfromed
 
 
 ![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/hosts_multiple_listings.png)
-
+![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/listing_multiple_hosts.png)
+![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/hosts_percentage_multiple_listings.png)
+![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/availability_multiple_listings.png)
+![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/clusters.png)
 
 
 
