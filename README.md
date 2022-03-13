@@ -39,7 +39,7 @@ The analysis code is based on several jupyter notebooks.
 * columns that have outliers like the price are for instance log transfromed
 
 
-![alt text](https://github.com/MarcelMB/Covid19_school_closure_monioring_analysis/blob/main/example_figure_1.png)
+![alt text](https://github.com/MarcelMB/Airbnb_Berlin_analysis/blob/main/figures/hosts_multiple_listings.png)
 
 
 
