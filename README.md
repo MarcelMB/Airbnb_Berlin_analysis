@@ -16,14 +16,17 @@ Airbnb does not share the data. However, it is possible to analyze data that is 
 The analysis code is based on several jupyter notebooks.  
 
 **_1._** In a first step the dataset is cleaned and summarized 
-* Notebook: *data_cleaning_selection.ipynb* At the end this step saves a cleaned csv file.
+* Notebook: *data_cleaning_selection.ipynb*, loads *listings_berlin_details.csv.gz* file 
+* At the end this step saves a cleaned csv file: *listings_berlin_null_free.csv*
 * Mostly dealing with NaNs
 * clean string columns which incldue numericals
 * droping unnessecary data columns
 
-**_2._** In a second step the numcerical and categorcials are further processed
-* Notebook: *numericals_categoricals.ipynb* At the end this step saves a cleaned csv file.
-* for instance amenities is a list of strings, this code creates a boolean if an amenity is available in the accomodation or not
+**_2._** In a second step the numericals and categorcials are further processed
+* Notebook: *numericals_categoricals.ipynb* At the end this step saves to different csv files:
+* *data_cluster_test.csv* --> used for *kmean_clustering_2.ipynb* (4.)
+* *data_cluster_test2.csv* --> used for data visualization (3.) and *kmean_clustering_2.ipynb* (4.)
+* cleaning example in this notebook: amenities is a list of strings, this code creates a boolean if an amenity is available in the accomodation or not
 
 **_3._** Data is visualized in different graphs with the main aim to show which hosts or listings use airbnb professionally instead of its intended use
 * Notebook: *data_visualization_2.ipynb*
@@ -31,7 +34,7 @@ The analysis code is based on several jupyter notebooks.
 
 **_4._** Uses Kmeans clustering to find patterns in the data 
 * the aim was to create cluster that distinguish between professional listings and ocasionally rented out accomodations
-* Notebook: *easy_kemans_cluster_test1.ipynb* uses only continious numerical data for kmeans. 
+* Notebook: *easy_kmeans_cluster_test1.ipynb* uses only continious numerical data for kmeans. 
 * Notebook: *kmean_clustering_2.ipynb* uses also boolean data, which is not an optimal solution for the Kmeans algortihm, however gives a better result in this case
 * especially cluster 1 has profesional listings: entire homes, hosts other listings, many reviews per month (high activity)
 * especially cluster 2 has more less profesional listings: private rooms, shared bathroom
