@@ -23,8 +23,7 @@ The analysis code is based on several jupyter notebooks.
 * droping unnessecary data columns
 
 **_2._** In a second step the numericals and categorcials are further processed
-* Notebook: *numericals_categoricals.ipynb* At the end this step saves to different csv files:
-* *data_cluster_test.csv* --> used for *kmean_clustering_2.ipynb* (4.)
+* Notebook: *numericals_categoricals.ipynb* At the end this step saves another cleaned data file as a csv:
 * *data_cluster_test2.csv* --> used for data visualization (3.) and *kmean_clustering_2.ipynb* (4.)
 * cleaning example in this notebook: amenities is a list of strings, this code creates a boolean if an amenity is available in the accomodation or not
 
@@ -34,8 +33,7 @@ The analysis code is based on several jupyter notebooks.
 
 **_4._** Uses Kmeans clustering to find patterns in the data 
 * the aim was to create cluster that distinguish between professional listings and ocasionally rented out accomodations
-* Notebook: *easy_kmeans_cluster_test1.ipynb* uses only continious numerical data for kmeans. 
-* Notebook: *kmean_clustering_2.ipynb* uses also boolean data, which is not an optimal solution for the Kmeans algortihm, however gives a better result in this case
+* Notebook: *kmean_clustering_2.ipynb* uses also boolean data, which is not an optimal solution for the Kmeans algortihm
 * especially cluster 1 has profesional listings: entire homes, hosts other listings, many reviews per month (high activity)
 * especially cluster 2 has more less profesional listings: private rooms, shared bathroom
 * columns that have outliers like the price are for instance log transfromed
